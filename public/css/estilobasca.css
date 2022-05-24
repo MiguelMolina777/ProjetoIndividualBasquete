@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mako', 'Arial';
+    background-color: black;
+  }
+header{
+position: absolute;
+width: 1366px;
+height: 151px;
+left: 0px;
+top: 0px;
+background: #D2780F;
+}

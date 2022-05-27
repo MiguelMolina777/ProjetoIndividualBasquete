@@ -1,0 +1,89 @@
+* {
+    font-family: 'Mako', sans-serif;
+}
+
+header {
+    position: absolute;
+    width: 1366px;
+    height: 130px;
+    left: 0px;
+    top: 0px;
+    background: #D2780F;
+}
+
+ul {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-left: 500px;
+}
+
+.titulo {
+    position: relative;
+    width: 350px;
+    height: 52px;
+    left: 27px;
+    top: 35px;
+    font-weight: 1000;
+    font-size: 50px;
+    line-height: 65px;
+    color: #000000;
+}
+
+ul {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.inicio {
+    position: absolute;
+    width: 97px;
+    height: 34px;
+    left: 683px;
+    top: 62px;
+}
+a{
+    color: #000000;
+    text-decoration: none;
+}
+.beneficio{
+    position: absolute;
+width: 181px;
+height: 35px;
+left: 787px;
+top: 62px;
+}
+
+.cadastro{
+    position: absolute;
+width: 107px;
+height: 34px;
+left: 968px;
+top: 62px;
+}
+
+.login{
+    position: absolute;
+width: 115px;
+height: 51px;
+left: 1183px;
+top: 56px;
+font-family: 'Mako';
+font-style: normal;
+font-weight: 400;
+font-size: 34px;
+line-height: 44px;
+color: #000000;
+border: 1px solid #000000;
+}
+.fundoLogin{
+    position: absolute;
+width: 115px;
+height: 51px;
+left: 1183px;
+top: 56px;
+background: #0F6AD2;
+}

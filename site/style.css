@@ -1,14 +1,23 @@
 * {
     font-family: 'Mako', sans-serif;
+    margin: 0;
+    padding: 0;
+    
 }
-
+html{
+    scroll-behavior: smooth;
+    font-family: 'Mako', sans-serif;;
+}
+body {
+    background-color: #C96D04;
+    font-family: 'Mako', sans-serif;
+}
+/*HEADER*/
 header {
-    position: absolute;
-    width: 1366px;
-    height: 130px;
-    left: 0px;
-    top: 0px;
-    background: #D2780F;
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    background: #C96D04;
 }
 
 ul {
@@ -18,11 +27,18 @@ ul {
     margin-left: 500px;
 }
 
+.ion{
+    position: absolute;
+    width: 350px;
+    height: 56px;
+    left: -125px;
+    top: 42px;
+}
+
 .titulo {
     position: relative;
     width: 350px;
-    height: 52px;
-    left: 27px;
+    left: 80px;
     top: 35px;
     font-weight: 1000;
     font-size: 50px;
@@ -43,47 +59,227 @@ ul {
     width: 97px;
     height: 34px;
     left: 683px;
-    top: 62px;
+    top: 55px;
 }
-a{
+
+a {
     color: #000000;
     text-decoration: none;
 }
-.beneficio{
+
+.beneficio {
     position: absolute;
-width: 181px;
-height: 35px;
-left: 787px;
-top: 62px;
+    width: 181px;
+    height: 35px;
+    left: 787px;
+    top: 55px;
 }
 
-.cadastro{
+.cadastro {
     position: absolute;
-width: 107px;
-height: 34px;
-left: 968px;
-top: 62px;
+    width: 107px;
+    height: 34px;
+    left: 968px;
+    top: 55px;
 }
 
-.login{
+.login {
     position: absolute;
-width: 115px;
-height: 51px;
-left: 1183px;
-top: 56px;
-font-family: 'Mako';
+    width: 115px;
+    height: 51px;
+    left: 1156px;
+    top: 45px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 44px;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.fundoLogin {
+    position: absolute;
+    width: 116px;
+    height: 52px;
+    left: 1156px;
+    top: 45px;
+    background: #0F6AD2;
+}
+/*content pagina inicial*/
+.imgback {
+    background-image: url(lebronWade.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 940px;
+    width: 100%;
+}
+
+.txtb {
+    position: absolute;
+    width: 629px;
+    height: 266px;
+    left: 669px;
+    top: 160px;
+    font-family: 'Mako';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 84px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.mundo {
+    padding-right: 90px;
+}
+
+.txtvid {
+    position: absolute;
+    width: 629px;
+    height: 87px;
+    left: 369px;
+    top: 1081px;
+    font-family: 'Mako';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 84px;
+    text-align: center;
+}
+
+.video {
+    position: absolute;
+    width: 696px;
+    height: 480px;
+    left: 310px;
+    top: 1190px;
+}
+
+.descvid {
+    position: absolute;
+    width: 696px;
+    height: 480px;
+    left: 325px;
+    top: 1615px;
+}
+
+.quadradoAzul {
+    position: absolute;
+    width: 100%;
+    height: 826px;
+    left: 0px;
+    top: 1756px;
+    background: #20283d;
+    border-bottom: #000000 solid;
+    border-radius: 3px;
+}
+
+.titulobene {
+    position: absolute;
+    width: 629px;
+    height: 167px;
+    left: 369px;
+    top: 1780px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 84px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.txtbene {
+    position: absolute;
+    width: 865px;
+    height: 541px;
+    left: 40px;
+    top: 1995px;
+    font-family: 'Mako';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.imgbene{
+    position: absolute;
+width: 339px;
+height: 640px;
+left: 915px;
+top: 1990px;
+}
+
+.imgagua{
+    height: 550px;
+}
+
+/*FOOTER*/
+
+.voltarinicio{
+    position: absolute;
+width: 79px;
+height: 76px;
+left: 591px;
+top: 2620px;
+}
+.insta{
+    position: absolute;
+width: 79px;
+height: 76px;
+left: 700px;
+top: 2620px;
+}
+
+.footcadastro{
+    position: absolute;
+    width: 173px;
+    height: 27px;
+    left: 555px;
+    top: 2720px;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+}
+
+.footlogin{
+    position: absolute;
+    width: 79px;
+    height: 24px;
+    left: 722px;
+    top: 2720px;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+}
+
+.direitos{
+    position: absolute;
+width: 242px;
+height: 73px;
+left: 562px;
+top: 2770px;
 font-style: normal;
-font-weight: 400;
-font-size: 34px;
-line-height: 44px;
+font-size: 20px;
+line-height: 26px;
+text-align: center;
 color: #000000;
-border: 1px solid #000000;
 }
-.fundoLogin{
-    position: absolute;
-width: 115px;
-height: 51px;
-left: 1183px;
-top: 56px;
-background: #0F6AD2;
-}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #C96D04;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #0460c9;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #C96D04;  /* creates padding around scroll thumb */
+  }

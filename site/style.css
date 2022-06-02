@@ -2,16 +2,20 @@
     font-family: 'Mako', sans-serif;
     margin: 0;
     padding: 0;
-    
+
 }
-html{
+
+html {
     scroll-behavior: smooth;
-    font-family: 'Mako', sans-serif;;
+    font-family: 'Mako', sans-serif;
+    ;
 }
+
 body {
     background-color: #C96D04;
     font-family: 'Mako', sans-serif;
 }
+
 /*HEADER*/
 header {
     position: relative;
@@ -27,7 +31,7 @@ ul {
     margin-left: 500px;
 }
 
-.ion{
+.ion {
     position: absolute;
     width: 350px;
     height: 56px;
@@ -105,6 +109,7 @@ a {
     top: 45px;
     background: #0F6AD2;
 }
+
 /*content pagina inicial*/
 .imgback {
     background-image: url(lebronWade.jpg);
@@ -202,36 +207,37 @@ a {
     color: #FFFFFF;
 }
 
-.imgbene{
+.imgbene {
     position: absolute;
-width: 339px;
-height: 640px;
-left: 915px;
-top: 1990px;
+    width: 339px;
+    height: 640px;
+    left: 915px;
+    top: 1990px;
 }
 
-.imgagua{
+.imgagua {
     height: 550px;
 }
 
 /*FOOTER*/
 
-.voltarinicio{
+.voltarinicio {
     position: absolute;
-width: 79px;
-height: 76px;
-left: 591px;
-top: 2620px;
-}
-.insta{
-    position: absolute;
-width: 79px;
-height: 76px;
-left: 700px;
-top: 2620px;
+    width: 79px;
+    height: 76px;
+    left: 591px;
+    top: 2620px;
 }
 
-.footcadastro{
+.insta {
+    position: absolute;
+    width: 79px;
+    height: 76px;
+    left: 700px;
+    top: 2620px;
+}
+
+.footcadastro {
     position: absolute;
     width: 173px;
     height: 27px;
@@ -244,7 +250,7 @@ top: 2620px;
     color: #000000;
 }
 
-.footlogin{
+.footlogin {
     position: absolute;
     width: 79px;
     height: 24px;
@@ -257,29 +263,34 @@ top: 2620px;
     color: #000000;
 }
 
-.direitos{
+.direitos {
     position: absolute;
-width: 242px;
-height: 73px;
-left: 562px;
-top: 2770px;
-font-style: normal;
-font-size: 20px;
-line-height: 26px;
-text-align: center;
-color: #000000;
+    width: 242px;
+    height: 73px;
+    left: 562px;
+    top: 2770px;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
 }
 
 body::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: #C96D04;        /* color of the tracking area */
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: #0460c9;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid #C96D04;  /* creates padding around scroll thumb */
-  }
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #C96D04;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #0460c9;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #C96D04;
+    /* creates padding around scroll thumb */
+}

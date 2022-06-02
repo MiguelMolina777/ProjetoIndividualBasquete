@@ -1,0 +1,239 @@
+* {
+    font-family: 'Mako', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Mako', sans-serif;
+    ;
+}
+
+body {
+    background-color: #C96D04;
+    font-family: 'Mako', sans-serif;
+}
+
+/*HEADER*/
+header {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    background: #C96D04;
+}
+
+ul {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-left: 500px;
+}
+
+.ion {
+    position: absolute;
+    width: 350px;
+    height: 56px;
+    left: -125px;
+    top: 42px;
+}
+
+.titulo {
+    position: relative;
+    width: 350px;
+    left: 80px;
+    top: 35px;
+    font-weight: 1000;
+    font-size: 50px;
+    line-height: 65px;
+    color: #000000;
+}
+
+ul {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.inicio {
+    position: absolute;
+    width: 97px;
+    height: 34px;
+    left: 683px;
+    top: 55px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.beneficio {
+    position: absolute;
+    width: 181px;
+    height: 35px;
+    left: 787px;
+    top: 55px;
+}
+
+.cadastro {
+    position: absolute;
+    width: 107px;
+    height: 34px;
+    left: 968px;
+    top: 55px;
+}
+
+.login {
+    position: absolute;
+    width: 115px;
+    height: 51px;
+    left: 1156px;
+    top: 45px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 44px;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.fundoLogin {
+    position: absolute;
+    width: 116px;
+    height: 52px;
+    left: 1156px;
+    top: 45px;
+    background: #0F6AD2;
+}
+
+/*content pagina inicial*/
+.imgback{
+    background-image: url(jordan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    border: #000000 10px;
+    
+}
+
+
+/*FOOTER*/
+
+.containerFooter{
+    width: 79px;
+    height: 76px;
+    left: 591px;
+    top: 820px;
+}
+
+.voltarinicio {
+    position: absolute;
+    width: 79px;
+    height: 76px;
+    left: 591px;
+    top: 850px;
+}
+
+.insta {
+    position: absolute;
+    width: 79px;
+    height: 76px;
+    left: 700px;
+    top: 850px;
+}
+
+.footcadastro {
+    position: absolute;
+    width: 173px;
+    height: 27px;
+    left: 555px;
+    top: 950px;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+}
+
+.footlogin {
+    position: absolute;
+    width: 79px;
+    height: 24px;
+    left: 722px;
+    top: 950px;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+}
+
+.direitos {
+    position: absolute;
+    width: 242px;
+    height: 73px;
+    left: 562px;
+    top: 1000px;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #C96D04;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #0460c9;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #C96D04;
+    /* creates padding around scroll thumb */
+}
+
+/* .banner {
+    height: fit-content;
+    padding: 150px 0;
+    color: white;
+    background-image: url("lebronWade.jpg");
+    background-attachment: fixed;
+}
+
+.texto {
+    margin-left: -500px;
+}
+
+.banner .container {
+    height: 400px;
+    font-size: 36px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tamanho-conteudo {
+    height: fit-content !important;
+}
+
+.banner p {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    width: 280px;
+    font-size: 36px;
+}
+
+.banner .container span {
+    font-weight: 800;
+} */

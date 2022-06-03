@@ -1,353 +1,297 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: 'Mako', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Mako', sans-serif;
+    ;
+}
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Mako', sans-serif;
-  background-color: black;
+    background-color: #C96D04;
+    font-family: 'Mako', sans-serif;
 }
 
-.container {
-  width: 80%;
-  margin: auto;
-  display: flex;
+/*HEADER*/
+header {
+    position: relative;
+    width: 100%;
+    height: 14vh;
+    background: #C96D04;
 }
 
-.header {
-  background-color: #D2780F;
-  border-bottom: 3px solid #000000;
+ul {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-left: 500px;
 }
 
-.header .container {
-  justify-content: space-between;
+.ion {
+    position: absolute;
+    width: 350px;
+    height: 56px;
+    left: -125px;
+    top: 16px;
 }
-
-.header a {
-  text-decoration: none;
-  color: #000000;
-}
-
-.agora {
-  font-weight: 800;
-}
-
-.navbar {
-  width: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-  color: #000000;
-  font-size: 1.2rem;
-}
-
 
 .titulo {
-  color: #000000;
-  width: fit-content;
-  font-weight: 1000;
+    position: relative;
+    width: 350px;
+    left: 80px;
+    top: 10px;
+    font-weight: 1000;
+    font-size: 50px;
+    line-height: 65px;
+    color: #000000;
+}
+
+ul {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.inicio {
+    position: absolute;
+    width: 97px;
+    height: 34px;
+    left: 683px;
+    top: 30px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.beneficio {
+    position: absolute;
+    width: 181px;
+    height: 35px;
+    left: 787px;
+    top: 30px;
+}
+
+.cadastro {
+    position: absolute;
+    width: 107px;
+    height: 34px;
+    left: 968px;
+    top: 30px;
+}
+
+.login {
+    position: absolute;
+    width: 115px;
+    height: 51px;
+    left: 1200px;
+    top: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 44px;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.fundoLogin {
+    position: absolute;
+    width: 116px;
+    height: 52px;
+    left: 1200px;
+    top: 20px;
+    background: #0F6AD2;
+}
+
+/*content pagina inicial*/
+.imgback {
+    background-image: url(../assets/lebronWadeOriginal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 940px;
+    width: 100%;
+}
+
+.txtb {
+    position: absolute;
+    width: 629px;
+    height: 266px;
+    left: 669px;
+    top: 120px;
+    font-family: 'Mako';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 84px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.mundo {
+    padding-right: 90px;
+}
+
+.txtvid {
+    position: absolute;
+    width: 629px;
+    height: 87px;
+    left: 369px;
+    top: 1081px;
+    font-family: 'Mako';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 84px;
+    text-align: center;
+}
+
+.video {
+    position: absolute;
+    width: 696px;
+    height: 480px;
+    left: 310px;
+    top: 1190px;
+}
+
+.descvid {
+    position: absolute;
+    width: 696px;
+    height: 480px;
+    left: 325px;
+    top: 1615px;
+}
+
+.quadradoAzul {
+    position: absolute;
+    width: 100%;
+    height: 826px;
+    left: 0px;
+    top: 1756px;
+    background: #20283d;
+    border-bottom: #000000 solid;
+    border-radius: 3px;
+}
+
+.titulobene {
+    position: absolute;
+    width: 629px;
+    height: 167px;
+    left: 369px;
+    top: 1780px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 84px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.txtbene {
+    position: absolute;
+    width: 865px;
+    height: 541px;
+    left: 40px;
+    top: 1995px;
+    font-family: 'Mako';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.imgbene {
+    position: absolute;
+    width: 339px;
+    height: 640px;
+    left: 915px;
+    top: 1990px;
+}
+
+.imgagua {
+    height: 550px;
 }
 
 
-/* BANNER */
+/*FOOTER*/
 
-.banner {
-  height: fit-content;
-  padding: 150px 0;
-  color: white;
-  background-image: url("lebronWade.jpg");
-  background-attachment: fixed;
+.voltarinicio {
+    position: absolute;
+    width: 79px;
+    height: 76px;
+    left: 591px;
+    top: 2620px;
 }
 
-.texto{
-  margin-left: -500px;
+.insta {
+    position: absolute;
+    width: 79px;
+    height: 76px;
+    left: 700px;
+    top: 2620px;
 }
 
-.banner .container {
-  height: 400px;
-  font-size: 36px;
-  justify-content: center;
-  align-items: center;
+.footcadastro {
+    position: absolute;
+    width: 173px;
+    height: 27px;
+    left: 555px;
+    top: 2720px;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
 }
 
-.tamanho-conteudo { 
-  height: fit-content !important;
+.footlogin {
+    position: absolute;
+    width: 79px;
+    height: 24px;
+    left: 722px;
+    top: 2720px;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
 }
 
-.banner p {
-  width: 50%;
-  margin: 0;
-  padding: 0;
-  width: 280px;
-  font-size: 36px;
+.direitos {
+    position: absolute;
+    width: 242px;
+    height: 73px;
+    left: 562px;
+    top: 2770px;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
 }
 
-.banner .container span {
-  font-weight: 800;
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
 }
 
-/* missao visao valores */
-
-.social {
-  background-color: #e5e5e5;
-  display: flex;
+body::-webkit-scrollbar-track {
+    background: #C96D04;
+    /* color of the tracking area */
 }
 
-.social .container{
-  justify-content: center;
-}
-
-.box img {
-  width: 170px;
-}
-
-.social .container .boxes {
-  display: flex;
-}
-
-.social p {
-  text-align: center;
-}
-
-.box {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-.box {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-/* FOOTER */
-
-.footer {
-  background-color: #32b9cd;
-  height: 150px;
-  color: #fff;
-  display: flex;
-  font-size: 15px;
-}
-
-.footer .container {
-  justify-content: center;
-}
-
-
-/* LOGIN */
-
-.banner .container .card {
-  background-color: #e5e5e5;
-  height: fit-content;
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  color: palevioletred;
-  align-items: center;
-  border-radius: 4px;
-}
-
-.card {
-  display: flex;
-  justify-content: space-around;
-}
-
-.card h2 {
-  font-size: 30px;
-}
-
-.card h4 {
-  font-size: 16px;
-}
-
-.banner #div_erros_login {
-  margin-top: 15px;
-}
-
-button {
-  cursor: pointer;
-}
-
-/* FORMULARIO */
-
-.alerta_erro{
-  display: flex;
-  justify-content: flex-end;
-}
-
-.card_erro {
-  display: none;
-  background-color: #fff;
-  color: black;
-  width: 230px;
-  position: fixed;
-  border-radius: 4px;
-  border: #e6005a 3px solid;
-  padding: 10px;
-  margin-right: 10%;
-}
-
-.card_erro #mensagem_erro{
-  font-weight: 500;
-  font-size: 20px;
-}
-
-.formulario .tipo_campo {
-  font-size: 20px;
-  font-weight: 600 !important;
-}
-
-.formulario {
-  display: flex;
-  flex-direction: column;
-}
-
-input {
-  margin-bottom: 10px;
-  border: 2px solid #32b9cd;
-  padding: 10px;
-  text-align: center;
-  border-radius: 10px;
-}
-
-.btn {
-  font-family: "Barlow", sans-serif;
-  border: 0;
-  border-radius: 5px;
-  font-weight: 600;
-  font-size: 18px;
-  padding: 10px 15px;
-  color: white;
-  background-color: #e6005a;
-  width: 120px;
-  align-self: center;
-  margin-top: 5px;
-}
-
-.loading-div {
-  width: 50px;
-  margin: auto;
-  display: none;
-}
-
-.loading-div img {
-  height: 50px;
-  width: 50px;
-}
-
-/* PAGINA DOS GRÁFICOS */
-
-.janela {
-  display: flex;
-  width: 100vw;
-}
-
-.header-left a {
-  text-decoration: none;
-  color: white;
-}
-
-.header-left {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  height: 100vh;
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  border-right: 3px solid #32b9cd;
-  background-color: #212124;
-  /* border: 3px solid pink; */
-}
-
-.dash-right {
-  display: flex;
-  width: 75%;
-  height: fit-content;
-  background-color: #161618;
-  position: relative;
-  top: 0;
-  left: 25%;
-}
-
-.header-left h1 {
-  color: #32b9cd;
-}
-
-.hello {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.hello h3 {
-  color: #e3b062;
-  font-weight: 300;
-  font-size: 1.2rem;
-}
-
-.hello h3 span {
-  font-weight: 800;
-}
-
-.btn-nav {
-  width: 40%;
-  color: white;
-  background-color: #e6005a;
-  border-radius: 5px;
-  text-align: center;
-  padding: 2% 5%;
-}
-
-.btn-nav-white {
-  width: 40%;
-  background-color: white;
-  border: 3px solid #e6005a;
-  border-radius: 5px;
-  text-align: center;
-  padding: 2% 5%;
-}
-
-.btn-nav-white h3 {
-  color: #e6005a;
-  padding: 0;
-  margin: 0;
-}
-
-.btn-nav h3,
-.btn-logout h3 {
-  margin: 0;
-  padding: 0;
-}
-
-.btn-logout {
-  margin: 0;
-  padding: 0;
-  width: 20%;
-  background-color: #32b9cd;
-  color: white;
-  border-radius: 10px;
-  text-align: center;
-  padding: 10px 15px;
-  margin-bottom: 100px;
-  cursor: pointer;
-}
-
-/* pagina extra - simulador */
-.simulador {
-  color: white;
-
-}
-
-.simulador .container {
-  flex-direction: column
+body::-webkit-scrollbar-thumb {
+    background-color: #0460c9;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #C96D04;
+    /* creates padding around scroll thumb */
 }

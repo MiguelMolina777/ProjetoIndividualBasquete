@@ -1,0 +1,287 @@
+* {
+    font-family: 'Mako', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Mako', sans-serif;
+    ;
+}
+
+body {
+    background-color: #C96D04;
+    font-family: 'Mako', sans-serif;
+}
+
+/*HEADER*/
+header {
+    position: relative;
+    width: 100%;
+    height: 13vh;
+    background: #C96D04;
+}
+
+ul {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-left: 500px;
+}
+
+.ion {
+    position: absolute;
+    width: 350px;
+    height: 56px;
+    left: -125px;
+    top: 16px;
+}
+
+.titulo {
+    position: relative;
+    width: 350px;
+    left: 80px;
+    top: 10px;
+    font-weight: 1000;
+    font-size: 50px;
+    line-height: 65px;
+    color: #000000;
+}
+
+ul {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.inicio {
+    position: absolute;
+    width: 97px;
+    height: 34px;
+    left: 683px;
+    top: 30px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.beneficio {
+    position: absolute;
+    width: 181px;
+    height: 35px;
+    left: 787px;
+    top: 30px;
+}
+
+.cadastro {
+    position: absolute;
+    width: 107px;
+    height: 34px;
+    left: 968px;
+    top: 30px;
+}
+
+.login {
+    position: absolute;
+    width: 115px;
+    height: 51px;
+    left: 1200px;
+    top: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 44px;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.fundoLogin {
+    position: absolute;
+    width: 116px;
+    height: 52px;
+    left: 1200px;
+    top: 20px;
+    background: #0F6AD2;
+}
+
+/*content pagina inicial*/
+.imgback{
+    background-image: url(../assets/jordanDunk.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 730px;
+    width: 100%;
+    border: #000000 10px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 500;
+    text-decoration: dashed;
+}
+
+input{
+    margin-bottom: 10px;
+  border: 2px solid #C96D04;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5em;
+}
+
+select{
+width: 100%;
+    min-width: 10ch;
+    max-width: 20ch;
+    border-radius: 5em;
+    padding: 0.25em 0.5em;
+    font-size: 1rem;
+    cursor: pointer;
+    line-height: 1.1;
+    border: 2.5px solid #C96D04;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.226);    
+    outline: none;
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button{
+    cursor: pointer;
+    border: 0;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 5px;
+  color: white;
+  background-color: #C96D04;
+  border: #000000 2px solid;
+  text-align: center;
+  width: 120px;
+  align-self: center;
+  margin-top: 5px;
+  transition: 0.5s;
+}
+
+.btnCor{
+    transition: 0.5s;
+}
+
+.retangulo{
+    background-color: #0460c9;
+    border: #000000 2px solid;
+    border-radius: 20px;
+    display: flex;
+    padding: 40px;
+    margin-right: 100px;
+    justify-content: center;
+}
+
+.containerMain{
+    color: white;
+    border: #000000;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
+    
+}
+.loading-div {
+    width: 50px;
+    margin: auto;
+    display: none;
+  }
+  
+  .loading-div img {
+    height: 50px;
+    width: 50px;
+  }
+
+
+/*FOOTER*/
+
+.containerFooter{
+    width: 79px;
+    height: 76px;
+    left: 591px;
+    top: 820px;
+}
+
+.voltarinicio {
+    position: absolute;
+    width: 79px;
+    height: 76px;
+    left: 591px;
+    top: 850px;
+}
+
+.insta {
+    position: absolute;
+    width: 79px;
+    height: 76px;
+    left: 700px;
+    top: 850px;
+}
+
+.footcadastro {
+    position: absolute;
+    width: 173px;
+    height: 27px;
+    left: 555px;
+    top: 950px;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+}
+
+.footlogin {
+    position: absolute;
+    width: 79px;
+    height: 24px;
+    left: 722px;
+    top: 950px;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+}
+
+.direitos {
+    position: absolute;
+    width: 242px;
+    height: 73px;
+    left: 562px;
+    top: 1000px;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #C96D04;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #0460c9;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #C96D04;
+    /* creates padding around scroll thumb */
+}
+

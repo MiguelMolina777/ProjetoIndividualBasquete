@@ -1,15 +1,19 @@
 /* pagina mural */
 
 *,
-body {
-  font-family: "Exo 2", sans-serif;
+body{
+  font-family: 'Mako', sans-serif;
+}
+
+html{
+  font-family: 'Mako', sans-serif;
 }
 
 .dash-right .avisos {
   width: 100%;
   /* border: 3px solid pink; */
   color: rgb(216, 216, 216);
-  font-family: "Exo 2", sans-serif;
+
 }
 
 .dash-right .avisos .container {

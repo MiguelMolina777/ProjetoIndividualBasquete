@@ -8,7 +8,6 @@
 html {
     scroll-behavior: smooth;
     font-family: 'Mako', sans-serif;
-    ;
 }
 
 body {
@@ -21,7 +20,11 @@ header {
     position: relative;
     width: 100%;
     height: 14vh;
-    background: #C96D04;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
 }
 
 ul {
@@ -29,6 +32,11 @@ ul {
     margin: auto;
     display: flex;
     margin-left: 500px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 35px;
+    color: #000000;
 }
 
 .ion {
@@ -50,65 +58,94 @@ ul {
     color: #000000;
 }
 
-ul {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 27px;
-    line-height: 35px;
-    color: #000000;
-}
-
 .inicio {
     position: absolute;
-    width: 97px;
-    height: 34px;
-    left: 683px;
+    width: 80px;
+    height: 36px;
+    left: 620px;
     top: 30px;
-}
-
-a {
-    color: #000000;
-    text-decoration: none;
 }
 
 .beneficio {
     position: absolute;
-    width: 181px;
-    height: 35px;
-    left: 787px;
+    width: 150px;
+    height: 36px;
+    left: 710px;
+    top: 30px;
+}
+
+.historia{
+    position: absolute;
+    width: 122px;
+    height: 36px;
+    left: 870px;
     top: 30px;
 }
 
 .cadastro {
     position: absolute;
-    width: 107px;
-    height: 34px;
-    left: 968px;
-    top: 30px;
+    width: 160px;
+    height: 45px;
+    left: 1020px;
+    top: 25px;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 44px;
 }
 
 .login {
     position: absolute;
     width: 115px;
-    height: 51px;
+    height: 45px;
     left: 1200px;
-    top: 20px;
+    top: 25px;
     font-style: normal;
-    font-weight: 700;
-    font-size: 34px;
+    font-weight: 600;
+    font-size: 27px;
     line-height: 44px;
-    color: #000000;
-    border: 1px solid #000000;
 }
 
-.fundoLogin {
+/* .fundoLogin {
     position: absolute;
     width: 116px;
     height: 52px;
     left: 1200px;
     top: 20px;
     background: #0F6AD2;
+} */
+
+.anima{
+    text-align: center;
+    display: block;
+    overflow: hidden;
+
 }
+
+.anima::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #0460c9;
+    z-index: -1;
+    transition: .7s ease;
+
+    
+}
+
+.anima::before{
+    width: 0;
+    height: 100%;
+}
+:hover::before{
+    width: 100%;
+}
+
+
 
 /*content pagina inicial*/
 .imgback {
@@ -143,7 +180,7 @@ a {
     width: 629px;
     height: 87px;
     left: 369px;
-    top: 1081px;
+    top: 1030px;
     font-family: 'Mako';
     font-style: normal;
     font-weight: 600;
@@ -157,15 +194,30 @@ a {
     width: 696px;
     height: 480px;
     left: 310px;
-    top: 1190px;
+    top: 1120px;
+}
+
+.backDesc{
+    margin: 10px;
+    position: absolute;
+    width: 750px;
+    height: 160px;
+    left: 287px;
+    top: 1540px;
+    border: solid 1px ;
+    border-radius: 30px;
+    background-color: #dee2ec;
 }
 
 .descvid {
+    margin: 10px;
     position: absolute;
-    width: 696px;
-    height: 480px;
-    left: 325px;
-    top: 1615px;
+    width: 703px;
+    height: 200px;
+    font-size: 20px;
+    line-height: 26px;
+    left: 310px;
+    top: 1550px;
 }
 
 .quadradoAzul {
@@ -175,8 +227,8 @@ a {
     left: 0px;
     top: 1756px;
     background: #20283d;
-    border-bottom: #000000 solid;
-    border-radius: 3px;
+    border-bottom: #000000 solid 5px;
+    border-top: #000000 solid 5px;
 }
 
 .titulobene {
@@ -283,7 +335,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: #C96D04;
+    background: #ad6008;
     /* color of the tracking area */
 }
 
@@ -292,6 +344,6 @@ body::-webkit-scrollbar-thumb {
     /* color of the scroll thumb */
     border-radius: 20px;
     /* roundness of the scroll thumb */
-    border: 3px solid #C96D04;
+    border: 3px solid #ad6008;
     /* creates padding around scroll thumb */
 }

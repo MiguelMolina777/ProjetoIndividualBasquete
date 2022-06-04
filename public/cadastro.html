@@ -25,13 +25,12 @@
           <span class="titulo">BASKA'S CLUB</span>
         </div>
         <ul>
-          <span class="inicio"><a href="index.html">INÍCIO</a></span>
-          <span class="beneficio"><a href="index.html#titulobene">BENEFÍCIOS</a></span>
-          <span class="cadastro"><a href="#">CADASTRO</a></span>
-          <div class="fundoLogin"></div>
-          <center>
-            <span class="login"><a href="login.html">LOGIN</a></span>
-          </center>
+          <span class="inicio"><a href="index.html" class="anima">INÍCIO</a></span>
+                <span class="historia"><a href="#titulohist" class="anima">HISTÓRIA</a></span>
+                <span class="beneficio"><a href="#titulobene" class="anima">BENEFÍCIOS</a></span>
+                <span class="cadastro"><a href="cadastro.html" class="anima">CADASTRO</a></span>
+                <div class="fundoLogin"></div>
+                <span class="login"><a href="login.html" class="anima">LOGIN</a></span>
         </ul>
       </div>
     </header>
@@ -71,7 +70,7 @@
             Confirme sua senha:
             <br>
             <input type="password" id="confirmacao_senha_input">
-            <br>
+            
             <button onclick="cadastrar()" class="btnCor">CADASTRAR
             </button>
             <div id="div_aguardar" class="loading-div">
@@ -98,7 +97,7 @@
         <div class="direitos">©2022 BASKA'S CLUB Todos direitos reservados</div>
       </div>
     </footer>
-
+    <!-- import ion icon -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -124,7 +123,7 @@
 
         if (nomeVar == "" || emailVar == "" || quadraVar =="" || senhaVar == "" || confirmacaoSenhaVar == "") {
             cardErro.style.display = "block"
-            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+            mensagem_erro.innerHTML = "(Mensagem de erro para um ou mais campos em branco)";
 
             finalizarAguardar();
             return false;

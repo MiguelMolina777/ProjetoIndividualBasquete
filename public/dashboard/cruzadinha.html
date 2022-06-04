@@ -20,6 +20,7 @@
 </head>
 
 <body onload="validarSessao(), atualizarFeed()">
+    <audio src="../assets/sounds/mixkit-basketball-ball-bouncing-2085.wav"></audio>
     <div class="num1">1.</div>
     <div class="num2">2.</div>
     <div class="num3">3.</div>
@@ -135,12 +136,13 @@
 
 <script>
 
-
+const audio = document.querySelector('audio')
     function func_c1() {
         if (r1.value == 'c' && r2.value == 'h' && r3.value == 'u' && r4.value == 't' && r5.value == 'e') {
 
             alert('Acertou!')
             chute_dica.innerHTML = `<b style="color:green;">1 - Outro nome para o termo arremesso</b>`
+            audio.play()
         }
     }
 
@@ -149,7 +151,7 @@
 
             alert('Acertou!')
             tabela_dica.innerHTML = `<b style="color:green;">2 - Retângulo de madeira/acrílico onde fica o aro</b>`
-
+            audio.play()
         }
 
     }
@@ -159,6 +161,7 @@
 
             alert('Acertou!')
             enterrada_dica.innerHTML = `<b style="color:green;">3 - Ato de colocar a bola dentro do aro com as mãos</b>`
+            audio.play()
         }
     }
 
@@ -166,6 +169,7 @@
         if (ad8.value == 'a' && u1.value == 'r' && u2.value == 'o') {
             alert('Acertou!')
             aro_dica.innerHTML = `<b style="color:green;">6 - Arco que a bola precisa passar para pontuar no basquete</b>`
+            audio.play()
         }
     }
 
@@ -173,6 +177,7 @@
         if (f1.value == 'c' && f2.value == 'o' && f3.value == 'u' && f4.value == 'o') {
             alert(`Acertou!`)
             couro_dica.innerHTML = `<b style="color:green;">5 - Material utilizado nas bolas de basquete de ginásio</b>`
+            audio.play()
         }
     }
 
@@ -180,6 +185,7 @@
         if (ad1.value == 'b' && ad2.value == 'o' && ad3.value == 'r' && ad4.value == 'r' && ad5.value == 'a' && ad6.value == 'c' && ad7.value == 'h' && ad8.value == 'a') {
             alert(`Acertou!`)
             borracha_dica.innerHTML = `<b style="color:green;">4 - Material utilizado nas bolas de basquete de rua</b>`
+            audio.play()
         }
     }
 

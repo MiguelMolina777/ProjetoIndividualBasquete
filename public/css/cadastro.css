@@ -17,11 +17,16 @@ body {
 }
 
 /*HEADER*/
+/*HEADER*/
 header {
     position: relative;
     width: 100%;
-    height: 13vh;
-    background: #C96D04;
+    height: 14vh;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
 }
 
 ul {
@@ -29,6 +34,11 @@ ul {
     margin: auto;
     display: flex;
     margin-left: 500px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 35px;
+    color: #000000;
 }
 
 .ion {
@@ -50,65 +60,91 @@ ul {
     color: #000000;
 }
 
-ul {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 27px;
-    line-height: 35px;
-    color: #000000;
-}
-
 .inicio {
     position: absolute;
-    width: 97px;
-    height: 34px;
-    left: 683px;
+    width: 80px;
+    height: 36px;
+    left: 620px;
     top: 30px;
-}
-
-a {
-    color: #000000;
-    text-decoration: none;
 }
 
 .beneficio {
     position: absolute;
-    width: 181px;
-    height: 35px;
-    left: 787px;
+    width: 150px;
+    height: 36px;
+    left: 710px;
+    top: 30px;
+}
+
+.historia{
+    position: absolute;
+    width: 122px;
+    height: 36px;
+    left: 870px;
     top: 30px;
 }
 
 .cadastro {
     position: absolute;
-    width: 107px;
-    height: 34px;
-    left: 968px;
-    top: 30px;
+    width: 160px;
+    height: 45px;
+    left: 1020px;
+    top: 25px;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 44px;
 }
 
 .login {
     position: absolute;
     width: 115px;
-    height: 51px;
+    height: 45px;
     left: 1200px;
-    top: 20px;
+    top: 25px;
     font-style: normal;
-    font-weight: 700;
-    font-size: 34px;
+    font-weight: 600;
+    font-size: 27px;
     line-height: 44px;
-    color: #000000;
-    border: 1px solid #000000;
 }
 
-.fundoLogin {
+/* .fundoLogin {
     position: absolute;
     width: 116px;
     height: 52px;
     left: 1200px;
     top: 20px;
     background: #0F6AD2;
+} */
+
+.anima{
+    text-align: center;
+    display: block;
+    overflow: hidden;
+
 }
+
+.anima::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #0460c9;
+    z-index: -1;
+    transition: .7s ease;
+}
+
+.anima::before{
+    width: 0;
+    height: 100%;
+}
+:hover::before{
+    width: 100%;
+}
+
 
 /*content pagina inicial*/
 .imgback{
@@ -210,12 +246,12 @@ button{
   
   .card_erro {
     display: none;
-    background-color: #fff;
+    background-color: rgb(204, 215, 247);
     color: black;
     width: 230px;
     position: fixed;
     border-radius: 4px;
-    border: #e6005a 3px solid;
+    border: #C96D04 3px solid;
     padding: 10px;
     margin-right: 10%;
   }
@@ -302,7 +338,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: #C96D04;
+    background: #ad6008;
     /* color of the tracking area */
 }
 
@@ -311,7 +347,7 @@ body::-webkit-scrollbar-thumb {
     /* color of the scroll thumb */
     border-radius: 20px;
     /* roundness of the scroll thumb */
-    border: 3px solid #C96D04;
+    border: 3px solid #ad6008;
     /* creates padding around scroll thumb */
 }
 

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcut icon" href="../assets/icon/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASKA'S CLUB | DASH</title>
+    <link rel="stylesheet" href="cruzadinha.css">
+    <script src="../js/funcoes.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- scripts do Chart.js -->
+    <script type="text/javascript" src="https://www.chartjs.org/dist/2.8.0/Chart.min.js"></script>
+
+</head>
+
+<body onload="validarSessao(), atualizarFeed()">
+    <div class="num1">1.</div>
+    <div class="num2">2.</div>
+    <div class="num3">3.</div>
+    <div class="num4">4.</div>
+    <div class="num5">5.</div>
+    <div class="num6">6.</div>
+
+    <div class="bck">
+        <div class="chute">
+            <input id="r1" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_c1()">
+            <input id="r2" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_c1()">
+            <input id="r3" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_c1()">
+            <input id="r4" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_c1()">
+            <input id="r5" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_c1()">
+
+        </div>
+
+        <div class="tabela">
+            <input id="e2" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_t()">
+            <input id="e3" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_t()">
+            <input id="e4" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_t()">
+            <input id="e5" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_t()">
+            <input id="e6" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_t()">
+        </div>
+
+        <div class="enterrada">
+            <input id="m1" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_e()">
+            <input id="m2" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_e()">
+            <input id="m3" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_e()">
+            <input id="m4" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_e()">
+            <input id="m5" class="cruz" type="text" maxlength="1" size="1">
+            <input id="m6" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_e()">
+            <input id="m7" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_e()">
+            <input id="m8" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_e()">
+        </div>
+
+        <div class="borracha">
+            <input id="ad1" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_b()">
+            <input id="ad2" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_b()">
+            <input id="ad3" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_b()">
+            <input id="ad4" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_b()">
+            <input id="ad5" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_b()">
+            <input id="ad6" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_b()">
+            <input id="ad7" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_b()">
+            <input id="ad8" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_b()">
+        </div>
+        <div class="aro">
+            <input id="u1" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_a()">
+            <input id="u2" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_a()">
+        </div>
+        <div class="couro">
+            <input id="f1" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_c2()">
+            <input id="f2" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_c2()">
+            <input id="f3" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_c2()">
+            <input id="f4" class="cruz" type="text" maxlength="1" size="1" style="margin-left:56px ;" onkeyup="func_c2()">
+        </div>
+    </div>
+
+    <div class="dicas">
+        <br>
+        <div class="chute_dica" id="chute_dica">
+            1 - Outro nome para o termo arremesso
+        </div> <br>
+        <div class="tabela_dica" id="tabela_dica">
+            2 - Retângulo de madeira/acrílico onde fica o aro
+        </div> <br>
+        <div id="enterrada_dica" class="enterrada_dica">
+            3 - Ato de colocar a bola dentro do aro com as mãos
+        </div> <br>
+        <div class="borracha_dica" id="borracha_dica">
+            4 - Material utilizado nas bolas de basquete de rua
+        </div> <br>
+        <div class="couro_dica" id="couro_dica">
+            5 - Material utilizado nas bolas de basquete de ginásio
+        </div> <br>
+        <div class="aro_dica" id="aro_dica">
+            6 - Arco que a bola precisa passar para pontuar no basquete
+        </div> <br>
+    </div>
+    <div class="janela">
+        <div class="header-left">
+            <h1>BASKA'S CLUB</h1>
+
+            <div class="hello">
+                <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
+            </div>
+
+            <div class="btn-nav-white">
+                <a href="./cards.html">
+                    <h3>VOTAÇÃO</h3>
+                </a>
+            </div>
+
+            <div class="btn-nav">
+
+                <h3>CRUZADINHA</h3>
+
+            </div>
+
+            <div class="btn-logout" onclick="limparSessao()">
+                <h3>Sair</h3>
+            </div>
+
+        </div>
+    </div>
+
+            
+
+
+</body>
+
+</html>
+
+<script>
+
+
+    function func_c1() {
+        if (r1.value == 'c' && r2.value == 'h' && r3.value == 'u' && r4.value == 't' && r5.value == 'e') {
+
+            alert('Acertou!')
+            chute_dica.innerHTML = `<b style="color:green;">1 - Outro nome para o termo arremesso</b>`
+        }
+    }
+
+    function func_t() {
+        if (r4.value == 't' && e2.value == 'a' && e3.value == 'b' && e4.value == 'e' && e5.value == 'l' && e6.value == 'a') {
+
+            alert('Acertou!')
+            tabela_dica.innerHTML = `<b style="color:green;">2 - Retângulo de madeira/acrílico onde fica o aro</b>`
+
+        }
+
+    }
+
+    function func_e() {
+        if (m1.value == 'e' && m2.value == 'n' && m3.value == 't' && m4.value == 'e' && m5.value == 'r' && m7.value == 'a' && m8.value == 'd' && e6.value == 'a') {
+
+            alert('Acertou!')
+            enterrada_dica.innerHTML = `<b style="color:green;">3 - Ato de colocar a bola dentro do aro com as mãos</b>`
+        }
+    }
+
+    function func_a(params) {
+        if (ad8.value == 'a' && u1.value == 'r' && u2.value == 'o') {
+            alert('Acertou!')
+            aro_dica.innerHTML = `<b style="color:green;">6 - Arco que a bola precisa passar para pontuar no basquete</b>`
+        }
+    }
+
+    function func_c2(params) {
+        if (f1.value == 'c' && f2.value == 'o' && f3.value == 'u' && f4.value == 'o') {
+            alert(`Acertou!`)
+            couro_dica.innerHTML = `<b style="color:green;">5 - Material utilizado nas bolas de basquete de ginásio</b>`
+        }
+    }
+
+    function func_b(params) {
+        if (ad1.value == 'b' && ad2.value == 'o' && ad3.value == 'r' && ad4.value == 'r' && ad5.value == 'a' && ad6.value == 'c' && ad7.value == 'h' && ad8.value == 'a') {
+            alert(`Acertou!`)
+            borracha_dica.innerHTML = `<b style="color:green;">4 - Material utilizado nas bolas de basquete de rua</b>`
+        }
+    }
+
+</script>

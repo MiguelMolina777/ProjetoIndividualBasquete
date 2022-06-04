@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="assets/icon/favicon.ico" type="" />
-    <title>BASKA'S CLUB</title>
+    <title>BASKA'S CLUB | CADASTRO</title>
     <link rel="stylesheet" href="css/cadastro.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,12 +16,13 @@
     <script src="./js/funcoes.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
   </head>
+  
   <body>
     <header>
       <div class="container" id="inicio">
         <div class="tudoTitulo">
           <ion-icon name="basketball-outline" class="ion"></ion-icon>
-          <span class="titulo">BASKA'S CLUB | CADASTRO</span>
+          <span class="titulo">BASKA'S CLUB</span>
         </div>
         <ul>
           <span class="inicio"><a href="index.html">INÍCIO</a></span>
@@ -36,6 +37,11 @@
     </header>
     <main>
       <div class="imgback">
+        <div class="alerta_erro">
+          <div class="card_erro" id="cardErro">
+              <span id="mensagem_erro"></span>
+          </div>
+      </div>
         <div class="retangulo">
           <div class="containerMain">
             <h3>CADASTRE-SE</h3>
@@ -68,6 +74,13 @@
             <br>
             <button onclick="cadastrar()" class="btnCor">CADASTRAR
             </button>
+            <div id="div_aguardar" class="loading-div">
+              <img src="assets/loadOrange.gif" id="loading-gif">
+          </div>
+
+          <div id="div_erros_login">
+
+          </div>
           </div>
         </div>
       </div>
@@ -113,7 +126,7 @@
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
 
-            // finalizarAguardar();
+            finalizarAguardar();
             return false;
         }
         else {
@@ -148,13 +161,13 @@
                 }, "2000")
                 
                 limparFormulario();
-                // finalizarAguardar();
+                finalizarAguardar();
             } else {
                 throw ("Houve um erro ao tentar realizar o cadastro!");
             }
         }).catch(function (resposta) {
             console.log(`#ERRO: ${resposta}`);
-            // finalizarAguardar();
+            finalizarAguardar();
         });
 
         return false;

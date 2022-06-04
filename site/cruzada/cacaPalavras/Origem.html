@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PALAVRAS CRUZADAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="num1">1.</div>
+    <div class="num2">2.</div>
+    <div class="num3">3.</div>
+    <div class="num4">4.</div>
+    <div class="num5">5.</div>
+    <div class="num6">6.</div>
+    <div class="num7">7.</div>
+    <div class="num8">8.</div>
+    <div class="num9">9.</div>
+    <div class="num10">10.</div>
+    <div class="num11">11.</div>
+    <div class="num12">12.</div>
+    <div class="num13">13.</div>
+    <div class="num14">14.</div>
+    <div class="num15">15.</div>
+    <div class="num16">16.</div>
+
+
+    <div class="container">
+        <div class="registradores">
+
+            <input id="r1" type="text" maxlength="1" size="1" onkeyup="func_r1()">
+            <input id="r2" type="text" maxlength="1" size="1" onkeyup="func_r1()">
+            <input id="r3" type="text" maxlength="1" size="1" onkeyup="func_r1()">
+            <input id="r4" type="text" maxlength="1" size="1" onkeyup="func_r1()">
+            <input id="r5" type="text" maxlength="1" size="1" onkeyup="func_r1()">
+            <input id="r6" type="text" maxlength="1" size="1" onkeyup="func_r1()">
+            <input id="r7" type="text" maxlength="1" size="1" onkeyup="func_r1()">
+            <input id="r8" type="text" maxlength="1" size="1" onkeyup="func_r1()">
+            <input id="r9" type="text" maxlength="1" size="1" onkeyup="func_r1()">
+            <input id="r10" type="text" maxlength="1" size="1" onkeyup="func_r1()">
+            <input id="r11" type="text" maxlength="1" size="1" onkeyup="func_r1()">
+            <input id="r12" type="text" maxlength="1" size="1" onkeyup="func_r1()">
+            <input id="r13" type="text" maxlength="1" size="1" onkeyup="func_r1()">
+        </div>
+
+        <div class="eprom">
+            <input id="e1" type="text" maxlength="1" size="1" onkeyup="func_e1()">
+            <input id="e2" type="text" maxlength="1" size="1" onkeyup="func_e1()">
+            <input id="e3" type="text" maxlength="1" size="1" onkeyup="func_e1()">
+            <input id="e4" type="text" maxlength="1" size="1" onkeyup="func_e1()">
+        </div>
+
+        <div class="rom">
+            <input id="rom1" type="text" maxlength="1" size="1" onkeyup="func_rom1()">
+            <input id="rom2" type="text" maxlength="1" size="1" onkeyup="func_rom1()">
+        </div>
+        <div style="color:green;"></div>
+        <div class="memoriademassa">
+            <input id="m1" type="text" maxlength="1" size="1" onkeyup="func_memoriademassa()">
+            <input id="m2" type="text" maxlength="1" size="1" style="margin-right: 57px;"
+                onkeyup="func_memoriademassa()">
+            <input id="m3" type="text" maxlength="1" size="1" onkeyup="func_memoriademassa()">
+            <input id="m4" type="text" maxlength="1" size="1" onkeyup="func_memoriademassa()">
+            <input id="m5" type="text" maxlength="1" size="1" onkeyup="func_memoriademassa()">
+            <input id="m6" type="text" maxlength="1" size="1" onkeyup="func_memoriademassa()">
+            <input id="m7" type="text" maxlength="1" size="1" onkeyup="func_memoriademassa()">
+            <input id="m8" type="text" maxlength="1" size="1" onkeyup="func_memoriademassa()">
+            <input id="m9" type="text" maxlength="1" size="1" onkeyup="func_memoriademassa()">
+            <input id="m10" type="text" maxlength="1" size="1" onkeyup="func_memoriademassa()">
+            <input id="m11" type="text" maxlength="1" size="1" onkeyup="func_memoriademassa()">
+            <input id="m12" type="text" maxlength="1" size="1" onkeyup="func_memoriademassa()">
+            <input id="m13" type="text" maxlength="1" size="1" onkeyup="func_memoriademassa()">
+        </div>
+
+
+        <div class="ula">
+            <input id="u1" type="text" maxlength="1" size="1" onkeyup="func_ula()">
+            <input id="u2" type="text" maxlength="1" size="1" onkeyup="func_ula()">
+        </div>
+        <div class="ram">
+            <input id="ram1" type="text" maxlength="1" size="1" onkeyup="func_ram()">
+            <input id="ram2" type="text" maxlength="1" size="1" onkeyup="func_ram()">
+        </div>
+
+        <div class="flash">
+            <input id="f1" type="text" maxlength="1" size="1" onkeyup="func_flash()">
+            <input id="f2" type="text" maxlength="1" size="1" onkeyup="func_flash()">
+            <input id="f3" type="text" maxlength="1" size="1" style="margin-top: 57px;" onkeyup="func_flash()">
+            <input id="f4" type="text" maxlength="1" size="1" onkeyup="func_flash()">
+        </div>
+        <div class="adressbus">
+            <input id="ad1" type="text" maxlength="1" size="1" onkeyup="func_adressbus()">
+            <input id="ad2" type="text" maxlength="1" size="1" onkeyup="func_adressbus()">
+            <input id="ad3" type="text" maxlength="1" size="1" onkeyup="func_adressbus()">
+            <input id="ad4" type="text" maxlength="1" size="1" onkeyup="func_adressbus()">
+            <input id="ad5" type="text" maxlength="1" size="1" onkeyup="func_adressbus()">
+            <input id="ad6" type="text" maxlength="1" size="1" onkeyup="func_adressbus()">
+            <input id="ad7" type="text" maxlength="1" size="1" onkeyup="func_adressbus()">
+            <input id="ad8" type="text" maxlength="1" size="1" onkeyup="func_adressbus()">
+        </div>
+        <div class="cpu">
+            <input id="cpu1" type="text" maxlength="1" size="1" onkeyup="func_cpu()">
+            <input id="cpu2" type="text" maxlength="1" size="1" onkeyup="func_cpu()">
+        </div>
+
+        <div class="quadcore">
+            <input id="q1" type="text" maxlength="1" size="1" onkeyup="func_quad()">
+            <input id="q2" type="text" maxlength="1" size="1" onkeyup="func_quad()">
+            <input id="q3" type="text" maxlength="1" size="1" onkeyup="func_quad()">
+            <input id="q4" type="text" maxlength="1" size="1" onkeyup="func_quad()">
+            <input id="q5" type="text" maxlength="1" size="1" style="margin-top: 56px;" onkeyup="func_quad()">
+            <input id="q6" type="text" maxlength="1" size="1" onkeyup="func_quad()">
+            <input id="q7" type="text" maxlength="1" size="1" onkeyup="func_quad()">
+        </div>
+
+        <div class="dma">
+            <input id="dma1" type="text" maxlength="1" size="1" onkeyup="func_dma()">
+            <input id="dma2" type="text" maxlength="1" size="1" onkeyup="func_dma()">
+
+        </div>
+
+        <div class="dualcore">
+            <input id="dual1" type="text" maxlength="1" size="1" onkeyup="func_dual()">
+            <input id="dual2" type="text" maxlength="1" size="1" onkeyup="func_dual()">
+            <input id="dual3" type="text" maxlength="1" size="1" onkeyup="func_dual()">
+            <input id="dual4" type="text" maxlength="1" size="1" onkeyup="func_dual()">
+            <input id="dual5" type="text" maxlength="1" size="1" onkeyup="func_dual()">
+            <input id="dual6" type="text" maxlength="1" size="1" onkeyup="func_dual()">
+            <input id="dual7" type="text" maxlength="1" size="1" style="margin-left: 56px;" onkeyup="func_dual()">
+        </div>
+
+        <div class="databus">
+            <input id="databus1" type="text" maxlength="1" size="1" onkeyup="func_databus()">
+            <input id="databus2" type="text" maxlength="1" size="1" onkeyup="func_databus()">
+            <input id="databus3" type="text" maxlength="1" size="1" onkeyup="func_databus()">
+            <input id="databus4" type="text" maxlength="1" size="1" onkeyup="func_databus()">
+            <input id="databus5" type="text" maxlength="1" size="1" onkeyup="func_databus()">
+            <input id="databus6" type="text" maxlength="1" size="1" style="margin-top: 56px;" onkeyup="func_databus()">
+        </div>
+        <div class="cs">
+            <input id="cs1" type="text" maxlength="1" size="1" onkeyup="func_cs()">
+        </div>
+        <div class="i5">
+            <input id="i1" type="text" maxlength="1" size="1" onkeyup="func_i5()">
+        </div>
+        <div class="i3">
+            <input id="i2" type="text" maxlength="1" size="1" onkeyup="func_i3()">
+        </div>
+    </div>
+    <div class="dicas">
+        <div class="registradores_dica" id="registradores_dica">
+            1 - Memória dentro da própria CPU que armazena n bits
+        </div> <br>
+        <div class="eprom_dica" id="eprom_dica">
+            2 - Memória programável apagável somente de leitura
+        </div> <br>
+        <div id="rom_dica" class="rom_dica">
+            3 - Memória somente de leitura
+        </div> <br>
+        <div class="mdm_dica" id="mdm_dica">
+            4 - Memória secundária ou auxiliar
+        </div> <br>
+        <div class="ula_dica" id="ula_dica">
+            5 - Circuito digital que realiza operações de adição e booleana AND
+        </div> <br>
+        <div class="ram_dica" id="ram_dica">
+            6 - Responsável pelo armazenamento de informações necessárias para a execução de aplicativos em uso e para o
+            funcionamento do próprio sistema operacional
+        </div> <br>
+        <div class="flash_dica" id="flash_dica">
+            7 - Tipo de dispositivo de armazenamento não volátil
+        </div> <br>
+        <div class="adsbus_dica" id="adsbus_dica">
+            8 - Indica o local onde os processos devem ser extraídos e para onde devem ser enviados após o processamento
+        </div> <br>
+        <div class="cpu_dica" id="cpu_dica">
+            9 - Unidade de Central de Processamento
+        </div> <br>
+        <div class="databus_dica" id="databus_dica">
+            10 - Transferência de dados, pode ser no mesmo computador, ou para computadores diferentes
+        </div> <br>
+        <div class="dualcore_dica" id="dualcore_dica">
+            11 - Processador com 2 núcleos
+        </div> <br>
+        <div class="quadcore_dica" id="quadcore_dica">
+            12 - Processador com 4 núcleos
+        </div> <br>
+        <div class="i3_dica" id="i3_dica">
+            13 - processador computadores/notebooks de entrada da marca intel, os mais recentes contém 4 nucleos de
+            processamento.
+        </div> <br>
+        <div class="i5_dica" id="i5_dica">
+            14 - Processador de computadores/notebooks intermediários da marca intel, os mais recentes contém 6 núcleos
+            de processamento.
+        </div> <br>
+        <div class="cs_dica" id="cs_dica">
+            15 - Sigla daquilo que funciona como um controle para chips integrados a um barramento de computador
+        </div> <br>
+        <div class="dma_dica" id="dma_dica">
+            16 - Componente capaz de fazer periféricos terem acesso direto a memória RAM sem sobrecarregar o
+            processador.
+        </div> <br>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+
+    function func_r1() {
+        if (r1.value == 'r' && r2.value == 'e' && r3.value == 'g' && r4.value == 'i' && r5.value == 's' && r6.value == 't' && r7.value == 'r' && r8.value == 'a' && r9.value == 'd' && r10.value == 'o' && r11.value == 'r' && r12.value == 'e' && r13.value == 's') {
+
+            alert('Acertou!')
+            registradores_dica.innerHTML = `<b style="color:green;">1 - Memória dentro da própria CPU que armazena n bits</b>`
+        }
+    }
+
+    function func_e1() {
+        if (r12.value == 'e' && e1.value == 'p' && e2.value == 'r' && e3.value == 'o' && e4.value == 'm') {
+
+            alert('Acertou!')
+            eprom_dica.innerHTML = `<b style="color:green;">2 - Memória programável apagável somente de leitura</b>`
+
+        }
+
+    }
+
+    function func_rom1() {
+
+        if (e2.value == 'r' && rom1.value == 'o' && rom2.value == 'm') {
+            alert('Acertou!')
+
+            rom_dica.innerHTML = `<b style="color:green;">3 - Memória somente de leitura</b>`
+
+
+        }
+
+    }
+
+    function func_memoriademassa() {
+        if (m1.value == 'm' && m2.value == 'e' && m3.value == 'o' && m4.value == 'r' && m5.value == 'i' && m6.value == 'a' && m7.value == 'd' && m8.value == 'e' && m9.value == 'm' && m10.value == 'a' && m11.value == 's' && m12.value == 's' && m13.value == 'a') {
+
+            alert('Acertou!')
+            mdm_dica.innerHTML = `<b style="color:green;">4 - Memória secundária ou auxiliar</b>`
+        }
+    }
+
+    function func_ula(params) {
+        if (u1.value == 'u' && u2.value == 'l' && m6.value == 'a') {
+            alert('Acertou!')
+            ula_dica.innerHTML = `<b style="color:green;">5 - Circuito digital que realiza operações de adição e booleana AND</b>`
+        }
+    }
+
+    function func_ram(params) {
+        if (ram1.value == 'r' && ram2.value == 'a' && m9.value == 'm') {
+            alert('Acertou!')
+            ram_dica.innerHTML = `<b style="color:green;">6 - Responsável pelo armazenamento de informações necessárias para a execução de aplicativos em uso e para o
+            funcionamento do próprio sistema operacional</b>`
+        }
+    }
+
+    function func_flash(params) {
+        if (f1.value == 'f' && f2.value == 'l' && m13.value == 'a' && f3.value == 's' && f4.value == 'h') {
+            alert(`Acertou!`)
+            flash_dica.innerHTML = `<b style="color:green;">7 - Tipo de dispositivo de armazenamento não volátil</b>`
+        }
+    }
+
+    function func_adressbus(params) {
+        if (m10.value == 'a' && ad1.value == 'd' && ad2.value == 'r' && ad3.value == 'e' && ad4.value == 's' && ad5.value == 's' && ad6.value == 'b' && ad7.value == 'u' && ad8.value == 's') {
+            alert(`Acertou!`)
+            adsbus_dica.innerHTML = `<b style="color:green;">8 - Indica o local onde os processos devem ser extraídos e para onde devem ser enviados após o processamento</b>`
+        }
+    }
+
+    function func_cpu(params) {
+        if (cpu1.value == 'c' && cpu2.value == 'p' && ad7.value == 'u') {
+            alert(`Acertou!`)
+            cpu_dica.innerHTML = `<b style="color:green;">9 - Unidade de Central de Processamento</b>`
+        }
+    }
+
+    function func_quad() {
+
+        if (q1.value == 'q' && q2.value == 'u' && q3.value == 'a' && q4.value == 'd' && q5.value == 'o' && q6.value == 'r' && q7.value == 'e') {
+            alert('Acertou!')
+            quadcore_dica.innerHTML = `<b style="color:green;">12 - Processador com 4 núcleos</b>`
+        }
+
+    }
+    function func_dma() {
+
+        if (dma1.value == 'd' && dma2.value == 'm' && q3.value == 'a') {
+            alert('Acertou!')
+            dma_dica.innerHTML = `<b style="color:green;">16 - Componente capaz de fazer periféricos terem acesso direto a memória RAM sem sobrecarregar o
+            processador.</b>`
+        }
+
+    }
+    function func_dual() {
+
+        if (dual1.value == 'd' && dual2.value == 'u' && dual3.value == 'a' && dual4.value == 'l' && dual5.value == 'c' && dual6.value == 'o' && dual7.value == 'e') {
+            alert('Acertou!')
+            dualcore_dica.innerHTML = `<b style="color:green;">13 - Processador com 2 núcleos</b>`
+        }
+
+    }
+
+    function func_databus() {
+
+        if (databus1.value == 'd' && databus2.value == 'a' && databus3.value == 't' && databus4.value == 'a' && databus5.value == 'b' && databus6.value == 's') {
+            alert('Acertou!')
+            databus_dica.innerHTML = `<b style="color:green;">10 - Transferência de dados, pode ser no mesmo computador, ou para computadores diferentes</b>`
+        }
+
+    }
+
+    function func_cs() {
+
+        if (cs1.value == 's' && dual5.value == 'c') {
+            alert('Acertou!')
+            cs_dica.innerHTML = `<b style="color:green;">15 - Sigla daquilo que funciona como um controle para chips integrados a um barramento de computador</b>`
+        }
+
+    }
+    function func_i5() {
+
+
+        if (r4.value == 'i' && i1.value == '5') {
+            alert('Acertou!')
+            i5_dica.innerHTML = `<b style="color:green;">14 - Processador de computadores/notebooks intermediários da marca intel, os mais recentes contém 6 núcleos
+            de processamento.</b>`
+        }
+
+    }
+    function func_i3() {
+        if (i2.value == '3') {
+            alert('Acertou!')
+            i3_dica.innerHTML = `<b style="color:green;">13 - processador computadores/notebooks de entrada da marca intel, os mais recentes contém 4 nucleos de
+            processamento.</b>`
+        }
+
+    }
+</script>

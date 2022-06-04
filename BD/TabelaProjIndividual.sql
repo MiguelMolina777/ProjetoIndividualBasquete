@@ -18,10 +18,12 @@ senha varchar(45)
 );
 
 insert into Quadra values 
-(null, 'SP', 'São Caetano do Sul', 'Espaço Verde Chico Mendes');
+(null, 'SP', 'São Caetano do Sul', 'Espaço Verde Chico Mendes'),
+(null, 'SP', 'São Bernardo do Campo', 'URAS');
 
 insert into usuario values
 (null, 'Miguel', 'miguel@email.com', 1, '123');
 
 select * from quadra 
 join usuario on usuario.fkQuadra = Quadra.idQuadra; 
+

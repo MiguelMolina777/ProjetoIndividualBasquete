@@ -17,19 +17,17 @@
 <body>
     <header>
         <div class="container" id="inicio">
-            <div class="tudoTitulo">
+            <a class="tudoTitulo" href="i.html">
                 <ion-icon name="basketball-outline" class="ion"></ion-icon>
                 <span class="titulo">BASKA'S CLUB</span>
+            </a>
             </div>
             <ul>
                 <span class="inicio"><a href="#" class="anima">INÍCIO</a></span>
                 <span class="historia"><a href="#titulohist" class="anima">HISTÓRIA</a></span>
                 <span class="beneficio"><a href="#titulobene" class="anima">BENEFÍCIOS</a></span>
                 <span class="cadastro"><a href="cadastro.html" class="anima">CADASTRO</a></span>
-                <div class="fundoLogin"></div>
-                <center>
-                    <span class="login"><a href="login.html" class="anima">LOGIN</a></span>
-                </center>
+                <span class="login"><a href="login.html" class="anima">LOGIN</a></span>
             </ul>
         </div>
     </header>
@@ -41,7 +39,6 @@
         </div>
         <div class="txtvid">
             COMECE POR AQUI:
-
         </div>
         <div class="video">
             <iframe width="727" height="409" src="https://www.youtube.com/embed/Um-oQj5xfkw"
@@ -50,15 +47,15 @@
                 allowfullscreen></iframe>
         </div>
         <div class="backDesc"></div>
-            <div class="descvid">
-                &nbsp; No vídeo acima vemos alguma das jogadas mais icônicas protagonizadas por Lebron James e Dwayne
-                Wade enquanto
-                jogavam pelo Miami Heat, time da NBA, a maior liga de basquetebol do mundo. No minuto 0:18 é possível
-                assitir a jogada que ficou eternizada em uma das mais icônicas fotografias tiradas de um jogo de
-                basquete.
-            </div>
-            
-       
+        <div class="descvid">
+            &nbsp; No vídeo acima vemos alguma das jogadas mais icônicas protagonizadas por Lebron James e Dwayne
+            Wade enquanto
+            jogavam pelo Miami Heat, time da NBA, a maior liga de basquetebol do mundo. No minuto 0:18 é possível
+            assitir a jogada que ficou eternizada em uma das mais icônicas fotografias tiradas de um jogo de
+            basquete.
+        </div>
+
+
         <div class="quadradoAzul">
 
         </div>
@@ -79,7 +76,8 @@
                 interação
                 saudável com pessoas de personalidades e realidades diferentes, trabalhando como um único time.</p>
             <br> <br>
-            DISCIPLINA E AUTOCONFIANÇA: <br>
+            DISCIPLINA E AUTOCONFIANÇA: 
+            
             <p> &nbsp;O basquete tem regras estabelecidas que devem ser obedecidas para que o jogo realmente funcione.
                 Isso
                 faz
@@ -93,11 +91,40 @@
         <div class="imgbene">
             <img src="assets/curryagua.jpg" alt="" class="imgagua">
         </div>
+        <div class="hist" id="titulohist">
+            <span class="titulohist"> CONHEÇA A HISTÓRIA DO BASQUETE</span>
+             <br>
+             <div class="txtcriador">
+                James Naismith (1861-1940).
+             </div>
+             <div class="txthist">
+                 QUEM FOI O CRIADOR DO BASQUETE:
+                <p>&nbsp;O basquetebol foi criado em 1891 pelo professor de Educação Física James Naismith, apesar de ser canadense, na época, ele trabalhava na Associação Cristã de Moços de Springfield, Massachusetts, nos Estados Unidos.</p>
+                <br>
+                QUAL ERA A IDEIA POR TRÁS DO BASQEUTE?
+                <p>&nbsp;A ideia inicial era ter um esporte inclusivo que pudesse ser praticado em áreas fechadas durante o inverno, já que a prática de esportes como o beisebol e o futebol americano eram limitadas nessa época do ano. Além disso, a ideia original era criar um esporte menos violento que o futebol americano. A ideia dele era de integrar os alunos nas aulas de educação física e estimular a coletividade dos grupos.</p> 
+                <br>
+                OLÍMPIADAS
+                <p>&nbsp;Apesar do primeiro jogo oficial ser disputado em 1892, somente mais tarde que o basquetebol passou a figurar nas Olimpíadas. O primeiro jogo de basquete olímpico aconteceu nos Jogos Olímpicos de Verão de 1936, em Berlim.
 
+                    Esse momento representou uma grande conquista para a disseminação do esporte pelo mundo. Hoje, cerca de 200 países são filiados à FIBA, Federação Internacional de Basquetebol.
+                    
+                    Essa organização foi fundada em 1932 e é responsável por organizar os eventos relacionados com o basquete em nível mundial. Atualmente, sua sede está localizada em Genebra, na Suíça.
+                </p>
+             </div>       
+             <img src="assets/imgs/criador do basquete.jpg" class="criador" alt="">
+             <div class="motivos" id="motivos">
+                <h3> Gostou do site?</h3>
+                 Cadastre-se agora e tenha acesso a funcionalidades exclusivas clicando <a class="agui" href="cadastro.html"> aqui.</a> <br>
+            </div>
+        </div>
+        <button onclick="notifica()"><ion-icon name="alert-circle" class="notify" id="notify"></ion-icon></button>
+        
+       
     </main>
 
     <footer>
-        <div>
+        <div class="pe">
             <a href="#inicio">
                 <ion-icon name="basketball-outline" class="voltarinicio"></ion-icon>
             </a>
@@ -116,3 +143,25 @@
 </body>
 
 </html>
+
+<script>
+    var sim = []
+    function notifica(params) {
+        sim.push(1)
+        clearInterval(pare)
+        for (var i = 0; i < sim.length; i++) {
+            if (sim.length%2 == 0) {
+                motivos.style.display = 'none'               
+            }else{
+                motivos.style.display = 'block'
+            }
+        }
+    }
+    var pare = setInterval(pisca, 1000)
+    function pisca(params) {
+        pis = document.getElementById('notify');
+        pis.classList.toggle('fade');
+    }
+    
+    
+</script>

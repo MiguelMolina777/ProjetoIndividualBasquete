@@ -20,16 +20,15 @@
   <body>
     <header>
       <div class="container" id="inicio">
-        <div class="tudoTitulo">
+        <a class="tudoTitulo" href="index.html">
           <ion-icon name="basketball-outline" class="ion"></ion-icon>
           <span class="titulo">BASKA'S CLUB</span>
-        </div>
+      </a>
         <ul>
           <span class="inicio"><a href="index.html" class="anima">INÍCIO</a></span>
-                <span class="historia"><a href="#titulohist" class="anima">HISTÓRIA</a></span>
-                <span class="beneficio"><a href="#titulobene" class="anima">BENEFÍCIOS</a></span>
-                <span class="cadastro"><a href="cadastro.html" class="anima">CADASTRO</a></span>
-                <div class="fundoLogin"></div>
+                <span class="historia"><a href="index.html#titulohist" class="anima">HISTÓRIA</a></span>
+                <span class="beneficio"><a href="index.html#titulobene" class="anima">BENEFÍCIOS</a></span>
+                <span class="cadastro"><a href="#" >CADASTRO</a></span>
                 <span class="login"><a href="login.html" class="anima">LOGIN</a></span>
         </ul>
       </div>
@@ -41,7 +40,7 @@
               <span id="mensagem_erro"></span>
           </div>
       </div>
-        <div class="retangulo">
+        <div class="retangulo" id="retangulo">
           <div class="containerMain">
             <h3>CADASTRE-SE</h3>
             <br> 
@@ -108,6 +107,13 @@
     ></script>
   </body>
 </html>
+<script>
+  var pare = setTimeout(pisca, 2500)
+    function pisca(params) {
+        pis = document.getElementById('retangulo');
+        pis.classList.toggle('fade');
+    }
+</script>
 <script>
     function cadastrar() {
         // aguardar();

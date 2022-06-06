@@ -1,9 +1,10 @@
 body {
-  background-color: #bce0ff;
+  background-color: #ffffff;
   font-family: 'Mako', sans-serif;
+  overflow-x: hidden;
 }
 
-input{
+input {
   border-radius: 20px;
   height: 50px;
   width: 50px;
@@ -15,7 +16,7 @@ input{
   text-transform: uppercase;
 }
 
-.ion{
+.ion {
   height: 50px;
   width: 50px;
   color: #D2780F;
@@ -46,21 +47,21 @@ input{
   margin-top: -54px
 }
 
-.borracha{
+.borracha {
   display: flex;
   flex-direction: column;
   margin-left: 700px;
   margin-top: -215px
 }
 
-.aro{
+.aro {
   display: flex;
   flex-direction: row;
   margin-left: 756px;
   margin-top: -54px
 }
 
-.couro{
+.couro {
   display: flex;
   flex-direction: row;
   margin-left: 532px;
@@ -208,7 +209,7 @@ input{
   margin: 0;
 }
 
-.erro_login{
+.erro_login {
   font-size: 10px;
 }
 
@@ -233,18 +234,43 @@ input{
 
 /* VOTAÇÃO */
 
-.bannerVota{
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
-width: 78vw;
-left: 21vw;
+.bannerVota {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78vw;
+  left: 21vw;
+  height: 100%;
 }
 
-.vs{
+.quadra {
+  position: relative;
+  height: 500px;
+  width: 500px;
+}
+
+.vs {
+  height: 40%;
+  width: 25vw;
+  border: 2px solid;
+}
+
+.imgvs {
   height: 40vh;
   width: 20vw;
-  border-radius: 50px;
-  border: 2px solid;
+}
+
+.lebron {
+  flex-direction: column;
+}
+
+.jordan {
+  flex-direction: column;
+}
+
+.grafico {
+  height: 50%;
+  width: 950px;
+  margin-left: 10%;
 }

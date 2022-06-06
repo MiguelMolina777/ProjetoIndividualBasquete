@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(94, 163, 223);
+  background-color: #bce0ff;
   font-family: 'Mako', sans-serif;
 }
 
@@ -7,12 +7,18 @@ input{
   border-radius: 20px;
   height: 50px;
   width: 50px;
-  border: 1px solid rgb(224, 99, 41);
+  border: 1px solid #D2780F;
   outline: none;
   text-align: center;
   box-shadow: 2px 2px 3px rgb(0 0 0 / 30%);
   font-size: 25px;
   text-transform: uppercase;
+}
+
+.ion{
+  height: 50px;
+  width: 50px;
+  color: #D2780F;
 }
 
 .bck {
@@ -92,14 +98,14 @@ input{
 .num5 {
   position: absolute;
   margin-left: 552px;
-  margin-top: 180px;
+  margin-top: 230px;
   font-size: 24px;
 }
 
 .num6 {
   position: absolute;
   margin-left: 720px;
-  margin-top: 450px;
+  margin-top: 500px;
   font-size: 24px;
 }
 
@@ -144,7 +150,7 @@ input{
   justify-content: space-around;
   align-items: center;
   border-right: 3px solid #D2780F;
-  background-color: #353e4e;
+  background-color: #20283d;
   /* border: 3px solid pink; */
 }
 
@@ -179,7 +185,7 @@ input{
 }
 
 .btn-nav {
-  width: 50%;
+  width: 90%;
   color: white;
   background-color: #0F6AD2;
   border-radius: 5px;
@@ -188,7 +194,7 @@ input{
 }
 
 .btn-nav-white {
-  width: 50%;
+  width: 90%;
   background-color: white;
   border: 3px solid #0F6AD2;
   border-radius: 5px;
@@ -200,6 +206,10 @@ input{
   color: #0F6AD2;
   padding: 0;
   margin: 0;
+}
+
+.erro_login{
+  font-size: 10px;
 }
 
 .btn-nav h3,
@@ -219,4 +229,22 @@ input{
   padding: 10px 15px;
   margin-bottom: 100px;
   cursor: pointer;
+}
+
+/* VOTAÇÃO */
+
+.bannerVota{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 78vw;
+left: 21vw;
+}
+
+.vs{
+  height: 40vh;
+  width: 20vw;
+  border-radius: 50px;
+  border: 2px solid;
 }

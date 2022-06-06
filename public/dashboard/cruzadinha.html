@@ -19,7 +19,8 @@
 
 </head>
 
-<body onload="validarSessao(), atualizarFeed()">
+<body onload="validarSessao()" >
+     <!-- -->
     <audio src="../assets/sounds/mixkit-basketball-ball-bouncing-2085.wav"></audio>
     <div class="num1">1.</div>
     <div class="num2">2.</div>
@@ -51,8 +52,8 @@
             <input id="m2" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_e()">
             <input id="m3" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_e()">
             <input id="m4" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_e()">
-            <input id="m5" class="cruz" type="text" maxlength="1" size="1">
-            <input id="m6" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_e()">
+            <input id="m5" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_e()">
+            <input id="m6" class="cruz" type="text" maxlength="1" size="1">
             <input id="m7" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_e()">
             <input id="m8" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_e()">
         </div>
@@ -63,7 +64,7 @@
             <input id="ad3" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_b()">
             <input id="ad4" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_b()">
             <input id="ad5" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_b()">
-            <input id="ad6" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_b()">
+            <input id="d6" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_b()">
             <input id="ad7" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_b()">
             <input id="ad8" class="cruz" type="text" maxlength="1" size="1" onkeyup="func_b()">
         </div>
@@ -157,8 +158,7 @@ const audio = document.querySelector('audio')
     }
 
     function func_e() {
-        if (m1.value == 'e' && m2.value == 'n' && m3.value == 't' && m4.value == 'e' && m5.value == 'r' && m7.value == 'a' && m8.value == 'd' && e6.value == 'a') {
-
+        if (m1.value == 'e' && m2.value == 'n' && m3.value == 't' && m4.value == 'e' && m5.value == 'r' && ad4.value == 'r' && m7.value == 'a' && m8.value == 'd' && e6.value == 'a') {
             alert('Acertou!')
             enterrada_dica.innerHTML = `<b style="color:green;">3 - Ato de colocar a bola dentro do aro com as mãos</b>`
             audio.play()
@@ -182,7 +182,7 @@ const audio = document.querySelector('audio')
     }
 
     function func_b(params) {
-        if (ad1.value == 'b' && ad2.value == 'o' && ad3.value == 'r' && ad4.value == 'r' && ad5.value == 'a' && ad6.value == 'c' && ad7.value == 'h' && ad8.value == 'a') {
+        if (ad1.value == 'b' && ad2.value == 'o' && ad3.value == 'r' && ad4.value == 'r' && ad5.value == 'a' && d6.value == 'c' && ad7.value == 'h' && ad8.value == 'a') {
             alert(`Acertou!`)
             borracha_dica.innerHTML = `<b style="color:green;">4 - Material utilizado nas bolas de basquete de rua</b>`
             audio.play()

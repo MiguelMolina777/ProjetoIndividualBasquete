@@ -34,6 +34,12 @@
     </header>
     <main>
       <div class="imgback">
+        <div class="alerta_erro">
+          <div class="card_erro" id="cardErro">
+              <span id="mensagem_erro"></span>
+              
+          </div>
+      </div>
         <div class="retangulo" id="retangulo">
           <div class="containerMain">
             <h3>LOGIN</h3> 
@@ -49,17 +55,15 @@
             
             <button onclick="entrar()" class="btnCor">ENTRAR
             </button>
-            
+            <div id="div_erros_login" class="erro_login">
+            </div>
             <div id="div_aguardar" class="loading-div">
               <img src="assets/loadOrange.gif" id="loading-gif">
           </div>
           </div>
           
-
-        <div id="div_erros_login">
-
         </div>
-        </div>
+        
       </div>
     </main>
     <footer>
@@ -102,8 +106,8 @@
 
         if (emailVar == "" || senhaVar == "") {
             cardErro.style.display = "block"
-            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
-            // finalizarAguardar();
+            mensagem_erro.innerHTML = "Um ou mais campos em branco";
+            finalizarAguardar();
             return false;
         }
         else {
@@ -148,7 +152,7 @@
 
                 resposta.text().then(texto => {
                     console.error(texto);
-                    // finalizarAguardar(texto);
+                    finalizarAguardar(texto);
                 });
             }
 

@@ -126,11 +126,21 @@
         console.log(quadraVar)
         var senhaVar = senha_input.value;
         var confirmacaoSenhaVar = confirmacao_senha_input.value;
-
+        if (emailVar.indexOf('@')<0) {
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "Erro, email inválido, por favor insira um email válido";
+            finalizarAguardar();
+            return false;
+          }
+        if (senhaVar != confirmacaoSenhaVar) {
+          cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "Confirmação de senha inválida, coloque a mesma senha";
+            finalizarAguardar();
+            return false;
+        }  
         if (nomeVar == "" || emailVar == "" || quadraVar =="" || senhaVar == "" || confirmacaoSenhaVar == "") {
             cardErro.style.display = "block"
-            mensagem_erro.innerHTML = "(Mensagem de erro para um ou mais campos em branco)";
-
+            mensagem_erro.innerHTML = "Um ou mais campos estão em branco";
             finalizarAguardar();
             return false;
         }
